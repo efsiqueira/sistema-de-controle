@@ -3,9 +3,10 @@ services:
   db:
     image: postgres
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - ./tmp/db:/var/lib/postgresql/data1
     environment:
       POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
     ports:
       - "5432:5432"
 
